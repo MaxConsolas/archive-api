@@ -14,12 +14,6 @@ export default {
     }
   },
   methods: {
-    test() {
-      console.log(process.env);
-    },
-  },
-  created: function() {
-    console.log(process.env);
   },
 }
 </script>
