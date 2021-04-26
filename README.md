@@ -1,6 +1,6 @@
 # archive-api
-Используется 
-qwewqewqewqewqe
+Зависимости 
+
 * "axios": "^0.21.1"
 * "core-js": "^3.6.5",
 * "material-design-icons-iconfont": "^6.1.0",
