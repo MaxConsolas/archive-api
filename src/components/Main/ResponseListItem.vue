@@ -10,15 +10,22 @@
           <v-btn
             text
             color="blue"
-            @click="$set(document,'showed',1)"
+            @click="$set(document,'showed', !document.showed)"
           >
-            Просмотр изображения
+            {{ !document.showed ? 'Просмотр изображения' : 'Свернуть' }}
+          </v-btn>
+          <v-btn
+            text
+            color="blue"
+            :href="appHost+'/documents/'+document.id"
+            download
+          >
+            Скачать
           </v-btn>
       </v-card-actions>
       <v-img
         v-if="document.showed"
         :src="appHost+'/documents/'+document.id"
-        :href="appHost+'/documents/'+document.id"
       ></v-img>
       </v-card>
   </v-layout>
